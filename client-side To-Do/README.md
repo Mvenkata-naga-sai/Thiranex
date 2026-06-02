@@ -62,19 +62,6 @@ The application is designed to work smoothly across:
 
 ---
 
-## ⚙️ Application Workflow
-
-1. User enters a task
-2. Task is added dynamically to the list
-3. Task is stored in `localStorage`
-4. User can:
-
-   * Mark task as completed
-   * Edit task
-   * Delete task
-5. Filters allow viewing tasks based on status
-
----
 
 ## 📌 Expected Outcome
 
@@ -103,5 +90,5 @@ This project demonstrates the practical implementation of JavaScript concepts to
 
 ## 👤 Author
 
-**Name:** Venkata Naga Sai
-**Role:** Web Development Intern
+ Venkata Naga Sai
+
