@@ -18,14 +18,6 @@ The website includes multiple pages such as:
 ✨ Key Features:
    Semantic HTML5 Structure
 
-Uses proper semantic elements:
-- <header>
-- <nav>
-- <main>
-- <section>
-- <article>
-- <footer>
-
 Accessibility (WCAG Compliant):
 - ARIA roles and labels implemented
 - Screen reader-friendly structure
@@ -71,4 +63,5 @@ thiranex/
  - Color contrast meets WCAG standards
    
 👨‍💻 Author
+
 Venkata Naga Sai
