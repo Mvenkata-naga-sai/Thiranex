@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-Time Weather Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header>
+        <h1>Real-Time Weather Dashboard</h1>
+        <p>Search for a city to view live weather metrics.</p>
+      </header>
+
+      <section class="toolbar" aria-label="Dashboard controls">
+        <div class="unit-toggle" role="group" aria-label="Temperature unit">
+          <span>Units:</span>
+          <button id="unit-c" class="toggle active" type="button">Celsius</button>
+          <button id="unit-f" class="toggle" type="button">Fahrenheit</button>
+        </div>
+        <button id="refresh-btn" class="secondary-btn" type="button">Refresh</button>
+      </section>
+
+      <form id="search-form" class="search" novalidate>
+        <label for="city-input">City Name</label>
+        <div class="search-row">
+          <input
+            id="city-input"
+            name="city"
+            type="text"
+            placeholder="e.g., Mumbai"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Get Weather</button>
+        </div>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+
+      <section class="recent-searches">
+        <h2>Recent Searches</h2>
+        <div id="recent-list" class="chip-list"></div>
+      </section>
+
+      <section id="weather-card" class="weather-card hidden" aria-live="polite">
+        <h2 id="location-name"></h2>
+        <div class="metrics">
+          <article class="metric">
+            <h3>Temperature</h3>
+            <p id="temperature-value">--</p>
+          </article>
+          <article class="metric">
+            <h3>Humidity</h3>
+            <p id="humidity-value">--</p>
+          </article>
+          <article class="metric">
+            <h3>Wind Speed</h3>
+            <p id="wind-value">--</p>
+          </article>
+          <article class="metric">
+            <h3>Feels Like</h3>
+            <p id="feels-like-value">--</p>
+          </article>
+          <article class="metric">
+            <h3>Pressure</h3>
+            <p id="pressure-value">--</p>
+          </article>
+          <article class="metric">
+            <h3>UV Index</h3>
+            <p id="uv-value">--</p>
+          </article>
+        </div>
+        <p id="updated-time" class="updated-time"></p>
+      </section>
+
+      <section id="forecast-card" class="weather-card hidden">
+        <h2>Next 24 Hours Forecast</h2>
+        <div id="forecast-list" class="forecast-list"></div>
+      </section>
+    </main>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
