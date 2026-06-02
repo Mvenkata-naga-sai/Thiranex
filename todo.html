@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>To-Do App | Venkat Portfolio</title>
+    <meta
+      name="description"
+      content="Interactive to-do list app with full CRUD, filtering, and localStorage persistence."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Venkat" />
+    <meta name="theme-color" content="#111827" />
+    <link rel="canonical" href="https://mysite.com/todo.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-todo">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <p class="site-title">Venkat</p>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="todo.html" aria-current="page">To-Do App</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" role="main">
+      <div class="wrapper">
+        <section class="todo-shell" aria-labelledby="todo-title">
+          <h1 id="todo-title">To-Do List</h1>
+          <p class="todo-subtitle">
+            Manage tasks with full CRUD, filter by status, and keep progress saved automatically.
+          </p>
+
+          <form id="todo-form" class="todo-form" aria-label="Add a task">
+            <label for="task-input">Task</label>
+            <div class="todo-input-row">
+              <input
+                id="task-input"
+                name="task"
+                type="text"
+                maxlength="140"
+                placeholder="Add a new task..."
+                required
+              />
+              <button type="submit">Add Task</button>
+            </div>
+          </form>
+
+          <div class="todo-toolbar" aria-label="Task filters">
+            <div class="filter-group" role="tablist" aria-label="Filter tasks">
+              <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+              <button type="button" class="filter-btn" data-filter="active">Active</button>
+              <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <p id="todo-count" class="todo-count" aria-live="polite">0 tasks</p>
+          </div>
+
+          <ul id="todo-list" class="todo-list" aria-live="polite" aria-label="Tasks"></ul>
+          <p id="empty-state" class="empty-state">No tasks yet. Add your first task above.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="wrapper">
+        <p>&copy; 2026 Venkat. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
