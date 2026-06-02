@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Venkat | Personal Portfolio</title>
+    <meta
+      name="description"
+      content="Get in touch with Venkat through an accessible and keyboard-friendly contact form."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Venkat" />
+    <meta name="theme-color" content="#111827" />
+    <link rel="canonical" href="https://mysite.com/contact.html" />
+    <meta property="og:title" content="Contact Venkat | Personal Portfolio" />
+    <meta
+      property="og:description"
+      content="Get in touch with Venkat through an accessible and keyboard-friendly contact form."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mysite.com/contact.html" />
+    <meta property="og:site_name" content="Venkat Portfolio" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Contact Venkat | Personal Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Get in touch with Venkat through an accessible and keyboard-friendly contact form."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-contact">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <p class="site-title">Venkat</p>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" role="main">
+      <div class="wrapper page-grid">
+        <section class="hero-card" aria-labelledby="contact-heading">
+          <h1 id="contact-heading">Contact</h1>
+          <p>
+            Use the form below to send a message. All required fields are
+            clearly indicated and validated accessibly.
+          </p>
+        </section>
+
+        <section class="content-card" aria-labelledby="form-heading">
+          <h2 id="form-heading">Send a Message</h2>
+          <p id="form-status" aria-live="polite">
+            This form uses native HTML validation and is fully keyboard accessible.
+          </p>
+          <form action="#" method="post" aria-labelledby="form-heading">
+            <div>
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                name="full-name"
+                type="text"
+                autocomplete="name"
+                required
+                aria-required="true"
+                aria-describedby="full-name-hint"
+              />
+              <small id="full-name-hint" class="field-hint">Enter your first and last name.</small>
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                inputmode="email"
+                required
+                aria-required="true"
+                aria-describedby="email-hint"
+              />
+              <small id="email-hint" class="field-hint">Use a valid email format, for example name@example.com.</small>
+            </div>
+
+            <div>
+              <label for="subject">Subject</label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                required
+                aria-required="true"
+                aria-describedby="subject-hint"
+              />
+              <small id="subject-hint" class="field-hint">Provide a short summary of your message.</small>
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                aria-required="true"
+                aria-describedby="message-hint"
+              ></textarea>
+              <small id="message-hint" class="field-hint">Include key details so I can respond effectively.</small>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="wrapper">
+        <p>&copy; 2026 Venkat. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
