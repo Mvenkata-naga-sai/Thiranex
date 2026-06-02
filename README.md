@@ -60,3 +60,8 @@ npx netlify deploy --prod --dir .
 ### Render
 
 Create a new **Static Site** and point it to this directory/repository. `render.yaml` is included for rewrite behavior.
+
+### Author
+
+Venkata Naga Sai  
+
